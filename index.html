@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KasimHussain Vijapura | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of KasimHussain Vijapura - B.Tech Engineering Student | Full-Stack Developer | Python Developer" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tailwind CDN (quick start) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body class="min-h-screen">
+    <!-- Top gradient line -->
+    <div class="top-accent"></div>
+
+    <!-- Navbar -->
+    <nav id="mainNav" class="navbar navbar-expand-lg sticky-top glass-nav">
+        <div class="container">
+
+            <!-- Brand / Logo -->
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                <span class="brand-icon"><i class="bi bi-code-slash"></i></span>
+                <span class="brand-text text-white">KasimHussain Vijapura</span>
+            </a>
+
+            <!-- Mobile toggle button -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+
+            <!-- Menu items + theme toggle -->
+            <div class="navbar" id="navLinks">
+                <ul class="navbar-nav ms-auto gap-lg-3 nav-pills-custom">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Theme toggle (stays on right side) -->
+                <!-- <div class="d-flex align-items-center gap-2 ms-lg-3">
+                    <button id="themeToggle" class="btn btn-icon" type="button" aria-label="Toggle dark/light mode"
+                        title="Toggle theme">
+                        <i id="themeIcon" class="bi bi-sun"></i>
+                    </button>
+                </div> -->
+            </div>
+
+        </div>
+    </nav>
+    <!-- Hero -->
+    <header id="home" class="section-pad">
+        <div class="container">
+            <div class="hero-wrap reveal">
+                <div class="hero-badge">
+                    <span class="dot-glow"></span>
+                    Available for opportunities
+                </div>
+
+                <h1 class="hero-title mt-4">
+                    Hi, I’m <span class="accent">KasimHussain Vijapura</span>
+                </h1>
+
+                <p class="hero-sub mt-3">
+                    <span class="mono">&lt;</span>
+                    <span id="typeTarget" class="type-text"></span>
+                    <span class="cursor">|</span>
+                    <span class="mono">/&gt;</span>
+                </p>
+
+                <p class="hero-desc mt-3">
+                    Full Stack Developer and Data Enthusiast with hands-on experience building multiple real-world
+                    projects. Skilled in HTML, CSS, JavaScript, Python, and SQL, with a focus on creating responsive web
+                    applications and data-driven solutions.
+                </p>
+
+                <!-- <div class="d-flex flex-wrap gap-2 mt-4"> -->
+                <!-- Primary CTAs -->
+                <div class="hero-actions mt-4">
+                    <a class="btn btn-glow" href="#projects"><i class="bi bi-grid-1x2 me-2"></i>View Projects</a>
+                    <a class="btn btn-outline-glow" href="#contact"><i class="bi bi-chat-dots me-2"></i>Contact Me</a>
+                    <a class="btn btn-soft" href="assets/KasimHussain_LJIET_Resume.pdf" download>
+                        <i class="bi bi-download me-2"></i>Resume Download
+                    </a>
+                </div>
+
+                <!-- Social chips -->
+                <div class="hero-social mt-3">
+                    <a class="btn btn-chip" href="https://github.com/Kasim-09" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub" title="GitHub">
+                        <i class="bi bi-github me-2"></i>GitHub
+                    </a>
+                    <a class="btn btn-chip" href="https://www.linkedin.com/in/kasimhussain329" aria-label="LinkedIn"
+                        title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-linkedin me-2"></i>LinkedIn
+                    </a>
+                    <a class="btn btn-chip" href="mailto:vijapurakasimhussain@gmail.com" aria-label="Email"
+                        title="Email" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-envelope me-2"></i>Email
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <!-- ✅ ABOUT SECTION (Desktop: 4 cards/row | Mobile: 2 cards/row) -->
+    <section id="about" class="section-pad">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="section-pill">&lt;About /&gt;</p>
+                <h2 class="section-title">Who I Am</h2>
+                <p class="section-desc">
+                    I’m a B.Tech engineering student and Python-focused developer passionate about building responsive
+                    web applications, APIs, and data-driven solutions. I enjoy learning by developing real-world
+                    projects and continuously improving performance, user experience, and code quality.
+                </p>
+            </div>
+
+            <!-- ✅ CARDS GRID -->
+            <!-- Mobile: 2 per row (col-6) | Tablet: 2 per row (col-md-6) | Desktop: 4 per row (col-xl-3) -->
+            <div class="row g-4 mt-4 align-items-stretch">
+                <div class="col-6 col-md-6 col-xl-3">
+                    <div class="glass-card reveal hover-lift h-100">
+                        <div class="card-top">
+                            <span class="icon-box"><i class="bi bi-window"></i></span>
+                            <h3>Full Stack Developer</h3>
+                        </div>
+                        <p>
+                            Build responsive full-stack web applications using HTML, CSS, JavaScript,
+                            Bootstrap/Tailwind, Python, and SQL, with secure REST APIs, authentication, and
+                            production-ready deployment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6 col-xl-3">
+                    <div class="glass-card reveal hover-lift h-100">
+                        <div class="card-top">
+                            <span class="icon-box"><i class="bi bi-filetype-py"></i></span>
+                            <h3>Python Developer</h3>
+                        </div>
+                        <p>
+                            Develop robust Python solutions including automation, REST backends, and data analytics
+                            tools using Pandas, NumPy, Streamlit, and SQL, focusing on performance and clean
+                            architecture.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6 col-xl-3">
+                    <div class="glass-card reveal hover-lift h-100 ">
+                        <div class="card-top">
+                            <span class="icon-box"><i class="bi bi-terminal"></i></span>
+                            <h3>Open Source Enthusiast</h3>
+                        </div>
+                        <p>
+                            Actively explore and contribute to open-source projects, collaborate with developers
+                            worldwide, and continuously learn from community-driven development practices while
+                            expanding professional networks and meaningful technical connections.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6 col-xl-3">
+                    <div class="glass-card reveal hover-lift h-100">
+                        <div class="card-top">
+                            <span class="icon-box"><i class="bi bi-shield-lock"></i></span>
+                            <h3>Java Developer</h3>
+                        </div>
+                        <p>
+                            Beginner Java Developer building strong foundations in Core Java, object-oriented
+                            programming, and JDBC-based database integration while continuously improving through
+                            hands-on projects and learning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ STATS BAR -->
+            <div class="glass-card reveal stats-bar mt-4">
+                <div class="stats-bar-inner">
+                    <div class="stat-item">
+                        <div class="stat-num" data-count="5">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-num" data-count="5">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-num" data-count="1.3">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-num" data-count="100" data-suffix="%">0%</div>
+                        <div class="stat-label">Commitment</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section-pad">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="section-pill">&lt;Skills /&gt;</p>
+                <h2 class="section-title">Skills & Tools</h2>
+                <p class="section-desc">
+                    A categorized overview of technologies I use for building, testing, and shipping projects.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <!-- Skill columns with progress -->
+                <div class="col-lg-4">
+                    <div class="glass-card reveal">
+                        <div class="card-top">
+                            <span class="icon-box"><i class="bi bi-layout-text-window-reverse"></i></span>
+                            <h3>Frontend Development</h3>
+                        </div>
+
+                        <div class="skill-item mt-4">
+                            <div class="skill-row">
+                                <span><i class="bi bi-filetype-html me-2"></i>HTML5</span>
+                                <span class="pct">98%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="width:98%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-row">
+                                <span><i class="bi bi-filetype-css me-2"></i>CSS3</span>
+                                <span class="pct">90%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="width:90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-row">
+                                <span><i class="bi bi-wind me-2"></i>Tailwind CSS</span>
+                                <span class="pct">90%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="width:90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-row">
+                                <span><i class="bi bi-braces me-2"></i>JavaScript</span>
+                                <span class="pct">88%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="width:88%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-row">
+                                <span><i class="bi bi-bootstrap me-2"></i>Bootstrap</span>
+                                <span class="pct">85%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="width:85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="glass-card reveal">
+                        <div class="card-top">
+                            <span class="icon-box"><i class="bi bi-server"></i></span>
+                            <h3>Backend Development</h3>
+                        </div>
+
+                        <div class="skill-item mt-4">
+                            <div class="skill-row">
+                                <span><i class="bi bi-node-plus me-2"></i>Java</span>
+                                <span class="pct">82%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="width:82%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-row">
+                                <span><i class="bi bi-filetype-py me-2"></i>Python</span>
+                                <span class="pct">78%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="width:78%"></div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="skill-item">
+                            <div class="skill-row">
+                                <span><i class="bi bi-database me-2"></i>MongoDB</span>
+                                <span class="pct">80%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="width:80%"></div>
+                            </div>
+                        </div> -->
+
+                        <div class="skill-item">
+                            <div class="skill-row">
+                                <span><i class="bi bi-database-check me-2"></i>SQL</span>
+                                <span class="pct">75%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="fill" style="width:75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="glass-card reveal">
+                        <div class="card-top">
+                            <span class="icon-box"><i class="bi bi-tools"></i></span>
+                            <h3>Tools & Technologies</h3>
+                        </div>
+
+                        <div class="tools-wrap mt-4">
+                            <span class="tool-pill"><i class="bi bi-code-square me-2"></i>VS Code</span>
+                            <span class="tool-pill"><i class="bi bi-git me-2"></i>Git</span>
+                            <span class="tool-pill"><i class="bi bi-box-seam me-2"></i>Docker</span>
+                            <!-- <span class="tool-pill"><i class="bi bi-terminal me-2"></i>Linux</span> -->
+                            <span class="tool-pill"><i class="bi bi-github me-2"></i>GitHub</span>
+                            <!-- <span class="tool-pill"><i class="bi bi-diagram-3 me-2"></i>APIs</span> -->
+                            <!-- <span class="tool-pill"><i class="bi bi-lightning-charge me-2"></i>Performance</span>
+                            <span class="tool-pill"><i class="bi bi-shield-check me-2"></i>Security</span>
+                        </div> -->
+                            <!-- JetBrains IDEs -->
+                            <span class="tool-pill">
+                                <i class="bi bi-code-slash me-2"></i>JetBrains IDEs
+                            </span>
+
+                            <!-- Figma -->
+                            <span class="tool-pill">
+                                <i class="bi bi-palette me-2"></i>Figma
+                            </span>
+
+                            <!-- WordPress -->
+                            <span class="tool-pill">
+                                <i class="bi bi-wordpress me-2"></i>WordPress
+                            </span>
+
+                            <!-- XAMPP -->
+                            <span class="tool-pill">
+                                <i class="bi bi-hdd-network "></i>XAMPP
+                            </span>
+
+                            <!-- pgAdmin 4 -->
+                            <span class="tool-pill">
+                                <i class="bi bi-database me-2"></i>pgAdmin 4
+                            </span>
+
+                            <!-- Arduino IDE -->
+                            <span class="tool-pill">
+                                <i class="bi bi-cpu me-2"></i>Arduino IDE
+                            </span>
+
+                            <!-- ESP32 -->
+                            <span class="tool-pill">
+                                <i class="bi bi-cpu-fill me-2"></i>ESP32
+                            </span>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-pad">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="section-pill">&lt;Projects /&gt;</p>
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-desc">
+                    A collection of projects showcasing full-stack development, Python work and Java work.
+                    Click any project to view details in a split-view modal.
+                </p>
+            </div>
+
+            <!-- Filter -->
+            <div class="d-flex flex-wrap gap-2 mt-4 reveal">
+                <button class="btn btn-filter active" data-filter="all">All</button>
+                <button class="btn btn-filter" data-filter="web">Web</button>
+                <button class="btn btn-filter" data-filter="python">Python</button>
+                <button class="btn btn-filter" data-filter="java">Java</button>
+                <!-- <button class="btn btn-filter" data-filter="security">Security</button> -->
+            </div>
+
+            <!-- Cards -->
+            <div id="projectGrid" class="row g-4 mt-2">
+                <!-- Project Card 1 -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="web" data-project='{
+               "title":"White Valley Cafe - Modern Website",
+               "category":"Frontend Web Development",
+               "featured":true,
+               "short":"White Valley Cafe - A modern, responsive website for a local cafe with menu, reservations, and contact features.",
+               "details":"Built a full-stack app with authentication, video handling, playlist management, and search. Focused on performance, clean UI, and scalable API structure.",
+               "features":["Fully responsive modern cafe website, Clean and attractive UI design, Interactive navigation and menu showcase, Fast-loading and Netlify deployed"],
+               "stack":["HTML","CSS","JavaScript","Bootstrap","Tailwind"],
+               "github":"https://github.com/Kasim-09/White-Valley-Cafe",
+               "demo":"https://white-valley-coffee-cafe.netlify.app/"
+             }'>
+                    <div class="project-card hover-lift">
+                        <div class="project-thumb">
+                            <div class="project-icon"><i class="bi bi-play-btn"></i></div>
+                            <span class="badge-featured">Featured</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-cat">Frontend Web Development</div>
+                            <h3 class="project-title">White Valley Cafe - Modern Website</h3>
+                            <p class="project-text">A fully responsive website for a local cafe with menu, reservations,
+                                and contact features.</p>
+                            <div class="tag-row">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="python" data-project='{
+               "title":"Personal Expense Tracker And Analyzer",
+               "category":"Full-Stack Python App",
+               "featured":true,
+               "short":"A Python-based personal expense tracker that stores transactions in SQLite and provides interactive analysis and visualizations using Pandas, NumPy, Matplotlib, and Streamlit.",
+               "details":"The Personal Expense Tracker & Analyzer is an interactive Python-based web application that helps users record, manage, and analyze daily expenses. Built with SQLite, Pandas/NumPy, Matplotlib, and Streamlit, it provides category-wise and overall spending insights through dynamic visualizations. It also supports exporting expense data to CSV, enabling users to download reports by selected category or across all categories for further analysis.",
+               "features":["Add, view, and manage personal expense records","Category-wise and overall expense analytics","Interactive visualizations for spending insights","Export statements to CSV (filtered or complete data)","Lightweight database using SQLite","User-friendly Streamlit interface"],
+               "stack":["Python","Pandas","Matplotlib","Streamlit","SQLite","Numpy"],
+               "github":"https://github.com/Kasim-09/Personal-Expense-Tracker-And-Analyser",
+               "demo":"https://personal-expense-tracker-and-analyser-8rtpuetazmh72ryam3hahy.streamlit.app/"
+             }'>
+                    <div class="project-card hover-lift">
+                        <div class="project-thumb">
+                            <div class="project-icon"><i class="bi bi-file-earmark-text"></i></div>
+                            <span class="badge-featured">Featured</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-cat">Full-Stack Python App</div>
+                            <h3 class="project-title">Personal Expense Tracker And Analyzer</h3>
+                            <p class="project-text">Interactive personal expense tracker and analytics dashboard built
+                                with Python, Pandas, SQLite, and Streamlit.</p>
+                            <div class="tag-row">
+                                <span class="tag">Python</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">Numpy</span>
+                                <span class="tag">Matplotlib</span>
+                                <span class="tag">Streamlit</span>
+                                <span class="tag">SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="python" data-project='{
+               "title":"AI-Powered Financial Entry Automation Tool",
+               "category":"Data Analysis Automation Tool",
+               "featured":true,
+               "short":"AI-Powered Financial Entry Automation Tool is a Streamlit app that extracts transactions from bank statement PDFs and converts them into a clean, validated CSV. It reduces manual data entry, improves accuracy, and streamlines financial reconciliation—optimized for Bank of Baroda statements.",
+               "details":"The AI-Powered Financial Entry Automation Tool is a Streamlit-based application that automatically extracts transaction data from bank statement PDFs and converts it into a clean, validated CSV format. It eliminates manual data entry by parsing statement tables, applying data cleaning rules, validating financial fields, and providing an interactive preview before export. The tool is optimized for Bank of Baroda statements and is designed to improve accuracy, speed up reconciliation workflows, and standardize financial data for downstream accounting systems.",
+               "features":["PDF Transaction Extraction", "Automated Data Cleaning", "Built-in Data Validation", "Interactive Preview Dashboard", "Strict CSV Export", "Multi-line Description Handling", "Issue Detection & Reporting", "Session-based Processing", "Bank of Baroda Bank Statement Optimized Parsing"],
+               "stack":["Python", "Streamlit", "pandas", "pdfplumber", "csv", "tempfile", "pathlib", "logging", "re", "datetime", "dataclasses"],
+               "github":"https://github.com/Kasim-09/AI-Powered-Financial-Entry-Automation-Tool",
+               "demo":"https://ai-powered-financial-entry-automation-tool-jxzmwjrowlc4g5ftuzm.streamlit.app/"
+             }'>
+                    <div class="project-card hover-lift">
+                        <div class="project-thumb">
+                            <div class="project-icon"><i class="bi bi-shield"></i></div>
+                            <span class="badge-featured">Featured</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-cat">Data Analysis Automation Tool Using Python</div>
+                            <h3 class="project-title">AI-Powered Financial Entry Automation Tool</h3>
+                            <p class="project-text">Tool for reducing manual work and improving reconciliation accuracy.
+                            </p>
+                            <div class="tag-row">
+                                <span class="tag">Python</span>
+                                <span class="tag">Streamlit</span>
+                                <span class="tag">pandas</span>
+                                <span class="tag">csv</span>
+                                <span class="tag">pdfplumber</span>
+                                <span class="tag">tempfile</span>
+                                <span class="tag">pathlib</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="col-md-6 col-lg-4 project-item reveal " data-category="java" data-project='{
+               "title":"Airline Reservation System",
+               "category":"Java Based Project",
+               "featured":false,
+               "short":"Airline Reservation System is a Java application used to search flights, book and cancel tickets, manage passengers, and control flight data, demonstrating object-oriented programming and database connectivity.",
+               "details":"The Airline Reservation System is a Java application that automates flight booking, cancellation, and passenger management. It allows users to search flights, reserve seats, and manage tickets, while admins can control flight and customer data. The project demonstrates object-oriented programming and database connectivity.",
+               "features":["Add, view, update flights", "Book flight tickets", "Cancel reservations", "View passenger details", "Display all bookings", "Search flights", "Check seat availability", "Data stored in MySQL database"],
+               "stack":["Java", "JDBC", "MySQL (XAMPP)"],
+               "github":"https://github.com/Kasim-09/Airline-Reservation-System",
+               "demo":"https://github.com/Kasim-09/Airline-Reservation-System"
+             }'>
+                    <div class="project-card hover-lift">
+                        <div class="project-thumb">
+                            <div class="project-icon"><i class="bi bi-airplane"></i></div>
+                            <!-- <span class="badge-featured">Featured</span> -->
+                        </div>
+                        <div class="project-body">
+                            <div class="project-cat">Java Based Project</div>
+                            <h3 class="project-title">Airline Reservation System</h3>
+                            <p class="project-text">Airline Reservation System is a Java application used to search flights, book and cancel tickets, manage passengers, and control flight data, demonstrating object-oriented programming and database connectivity.
+                            </p>
+                            <div class="tag-row">
+                                <span class="tag">Java</span>
+                                <span class="tag">JDBC</span>
+                                <span class="tag">MySQL (XAMPP)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more project-item cards similarly -->
+            </div>
+
+            <div class="text-center mt-5 reveal">
+                <a class="btn btn-outline-glow" href="https://github.com/Kasim-09" target="_blank" rel="noopener">
+                    <i class="bi bi-github me-2"></i>View All Projects on GitHub <i
+                        class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-pad">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="section-pill">&lt;Contact /&gt;</p>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-desc">
+                    Have an opportunity or project idea? Send a message — I’ll reply as soon as possible.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-lg-5">
+                    <div class="glass-card reveal">
+                        <div class="contact-card">
+                            <div class="icon-box"><i class="bi bi-envelope"></i></div>
+                            <div>
+                                <div class="small text-muted">Email</div>
+                                <div class="fw-semibold">vijapurakasimhussain@gmail.com</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card mt-3">
+                            <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                            <div>
+                                <div class="small text-muted">Location</div>
+                                <div class="fw-semibold">India</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card mt-3">
+                            <div class="icon-box"><i class="bi bi-telephone"></i></div>
+                            <div>
+                                <div class="small text-muted">Phone</div>
+                                <div class="fw-semibold">+91 97233 52315</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="small connect-text mb-2">Connect with me</div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a class="btn btn-chip" href="https://github.com/Kasim-09" target="_blank" rel="noopener"><i class="bi bi-github me-2"></i>GitHub</a>
+                                <a class="btn btn-chip" href="https://www.linkedin.com/in/kasimhussain329" target="_blank" rel="noopener"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+                                <a class="btn btn-chip" href="mailto:vijapurakasimhussain@gmail.com"><i
+                                        class="bi bi-envelope me-2"></i>Email</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="glass-card reveal">
+                        <h3 class="mb-3">Send a Message</h3>
+
+                        <form id="contactForm" novalidate>
+                            <div class="mb-3">
+                                <label class="form-label" for="name">Your Name</label>
+                                <div class="input-wrap">
+                                    <i class="bi bi-person"></i>
+                                    <input id="name" name="name" class="form-control form-control-lg" type="text"
+                                        placeholder="alex maxel" required>
+                                </div>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="email">Your Email</label>
+                                <div class="input-wrap">
+                                    <i class="bi bi-envelope"></i>
+                                    <input id="email" name="email" class="form-control form-control-lg" type="email"
+                                        placeholder="alex@example.com" required>
+                                </div>
+                                <div class="invalid-feedback">Please enter a valid email.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="message">Your Message</label>
+                                <textarea id="message" name="message" class="form-control form-control-lg" rows="5"
+                                    placeholder="Tell me about your project or just say hi..." required></textarea>
+                                <div class="invalid-feedback">Please write a message.</div>
+                            </div>
+
+                            <button class="btn btn-glow w-100" type="submit">
+                                <i class="bi bi-send me-2"></i>Send Message
+                            </button>
+
+                            <!-- <div id="formStatus" class="mt-3" role="status" aria-live="polite"></div> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container py-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <div class="text-muted">
+                    © <span id="year"></span> KasimHussain Vijapura — All rights reserved.
+                </div>
+
+                <!-- <div class="d-flex gap-3">
+                    <a class="footer-link" href="#home">Home</a>
+                    <a class="footer-link" href="#projects">Projects</a>
+                    <a class="footer-link" href="#contact">Contact</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button id="toTop" class="to-top" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Project Modal (Split View) -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content glass-modal">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <!-- Left: Card -->
+                        <div class="col-lg-5">
+                            <div class="project-card modal-left-card">
+                                <div class="project-thumb">
+                                    <div id="modalIcon" class="project-icon"><i class="bi bi-layers"></i></div>
+                                    <span id="modalFeatured" class="badge-featured d-none">Featured</span>
+                                </div>
+                                <div class="project-body">
+                                    <div id="modalCategory" class="project-cat">Category</div>
+                                    <h3 id="modalTitle" class="project-title">Title</h3>
+                                    <p id="modalShort" class="project-text">Short description</p>
+                                    <div id="modalTags" class="tag-row"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Expanded -->
+                        <div class="col-lg-7">
+                            <div class="glass-card modal-right-card">
+                                <h3 class="mb-2 modal-section-title">Overview</h3>
+                                <p id="modalDetails" class="text-muted mb-0"></p>
+
+                                <div class="modal-divider"></div>
+
+                                <h4 class="mb-2 modal-section-title">Key Features</h4>
+                                <ul id="modalFeatures" class="feature-list mb-0"></ul>
+
+                                <div class="modal-divider"></div>
+
+                                <h4 class="mb-2 modal-section-title">Tech Stack</h4>
+                                <div id="modalStack" class="d-flex flex-wrap gap-2 mb-3"></div>
+
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a id="modalGithub" class="btn btn-outline-glow" href="#" target="_blank"
+                                        rel="noopener">
+                                        <i class="bi bi-github me-2"></i>GitHub Repo
+                                    </a>
+                                    <a id="modalDemo" class="btn btn-glow" href="#" target="_blank" rel="noopener">
+                                        <i class="bi bi-box-arrow-up-right me-2"></i>Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <div class="d-flex flex-wrap gap-2">
+                                <a id="modalGithub" class="btn btn-outline-glow" href="#" target="_blank"
+                                    rel="noopener">
+                                    <i class="bi bi-github me-2"></i>GitHub Repo
+                                </a>
+                                <a id="modalDemo" class="btn btn-glow" href="#" target="_blank" rel="noopener">
+                                    <i class="bi bi-box-arrow-up-right me-2"></i>Live Demo
+                                </a>
+                            </div> -->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
