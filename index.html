@@ -25,39 +25,30 @@
     <!-- Top gradient line -->
     <div class="top-accent"></div>
 
-    <!-- Navbar -->
     <nav id="mainNav" class="navbar navbar-expand-lg sticky-top glass-nav">
         <div class="container">
 
-            <!-- Brand / Logo -->
+            <!-- Brand -->
             <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
                 <span class="brand-icon"><i class="bi bi-code-slash"></i></span>
                 <span class="brand-text text-white">KasimHussain Vijapura</span>
             </a>
 
-            <!-- Mobile toggle button -->
+            <!-- Mobile Toggle -->
             <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <i class="bi bi-list fs-2"></i>
             </button>
 
-            <!-- Menu items + theme toggle -->
-            <div class="navbar" id="navLinks">
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse" id="navLinks">
                 <ul class="navbar-nav ms-auto gap-lg-3 nav-pills-custom">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-
-                <!-- Theme toggle (stays on right side) -->
-                <!-- <div class="d-flex align-items-center gap-2 ms-lg-3">
-                    <button id="themeToggle" class="btn btn-icon" type="button" aria-label="Toggle dark/light mode"
-                        title="Toggle theme">
-                        <i id="themeIcon" class="bi bi-sun"></i>
-                    </button>
-                </div> -->
             </div>
 
         </div>
@@ -90,26 +81,36 @@
 
                 <!-- <div class="d-flex flex-wrap gap-2 mt-4"> -->
                 <!-- Primary CTAs -->
-                <div class="hero-actions mt-4">
-                    <a class="btn btn-glow" href="#projects"><i class="bi bi-grid-1x2 me-2"></i>View Projects</a>
-                    <a class="btn btn-outline-glow" href="#contact"><i class="bi bi-chat-dots me-2"></i>Contact Me</a>
+                <!-- Primary buttons -->
+                <div class="hero-actions mt-4 d-grid gap-3 d-sm-flex flex-wrap
+            justify-content-sm-center justify-content-md-center">
+                    <a class="btn btn-glow" href="#projects">
+                        <i class="bi bi-grid-1x2 me-2"></i>View Projects
+                    </a>
+
+                    <a class="btn btn-outline-glow" href="#contact">
+                        <i class="bi bi-chat-dots me-2"></i>Contact Me
+                    </a>
+
                     <a class="btn btn-soft" href="assets/KasimHussain_LJIET_Resume.pdf" download>
                         <i class="bi bi-download me-2"></i>Resume Download
                     </a>
                 </div>
 
                 <!-- Social chips -->
-                <div class="hero-social mt-3">
-                    <a class="btn btn-chip" href="https://github.com/Kasim-09" target="_blank" rel="noopener noreferrer"
-                        aria-label="GitHub" title="GitHub">
+                <div class="hero-social mt-3 d-grid gap-2 d-sm-flex flex-wrap
+            justify-content-sm-center justify-content-md-center">
+                    <a class="btn btn-chip" href="https://github.com/Kasim-09" target="_blank"
+                        rel="noopener noreferrer">
                         <i class="bi bi-github me-2"></i>GitHub
                     </a>
-                    <a class="btn btn-chip" href="https://www.linkedin.com/in/kasimhussain329" aria-label="LinkedIn"
-                        title="LinkedIn" target="_blank" rel="noopener noreferrer">
+
+                    <a class="btn btn-chip" href="https://www.linkedin.com/in/kasimhussain329" target="_blank"
+                        rel="noopener noreferrer">
                         <i class="bi bi-linkedin me-2"></i>LinkedIn
                     </a>
-                    <a class="btn btn-chip" href="mailto:vijapurakasimhussain@gmail.com" aria-label="Email"
-                        title="Email" target="_blank" rel="noopener noreferrer">
+
+                    <a class="btn btn-chip" href="mailto:vijapurakasimhussain@gmail.com">
                         <i class="bi bi-envelope me-2"></i>Email
                     </a>
                 </div>
@@ -135,7 +136,7 @@
             <!-- ✅ CARDS GRID -->
             <!-- Mobile: 2 per row (col-6) | Tablet: 2 per row (col-md-6) | Desktop: 4 per row (col-xl-3) -->
             <div class="row g-4 mt-4 align-items-stretch">
-                <div class="col-6 col-md-6 col-xl-3">
+                <div class="col-12 col-md-6 col-xl-3">
                     <div class="glass-card reveal hover-lift h-100">
                         <div class="card-top">
                             <span class="icon-box"><i class="bi bi-window"></i></span>
@@ -149,7 +150,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-xl-3">
+                <div class="col-12 col-md-6 col-xl-3">
                     <div class="glass-card reveal hover-lift h-100">
                         <div class="card-top">
                             <span class="icon-box"><i class="bi bi-filetype-py"></i></span>
@@ -163,7 +164,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-xl-3">
+                <div class="col-12 col-md-6 col-xl-3">
                     <div class="glass-card reveal hover-lift h-100 ">
                         <div class="card-top">
                             <span class="icon-box"><i class="bi bi-terminal"></i></span>
@@ -177,7 +178,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-6 col-xl-3">
+                <div class="col-12 col-md-6 col-xl-3">
                     <div class="glass-card reveal hover-lift h-100">
                         <div class="card-top">
                             <span class="icon-box"><i class="bi bi-shield-lock"></i></span>
@@ -446,12 +447,17 @@
                             <h3 class="project-title">White Valley Cafe - Modern Website</h3>
                             <p class="project-text">A fully responsive website for a local cafe with menu, reservations,
                                 and contact features.</p>
-                            <div class="tag-row">
+                            <!-- <div class="tag-row">
                                 <span class="tag">HTML</span>
                                 <span class="tag">CSS</span>
                                 <span class="tag">JavaScript</span>
                                 <span class="tag">Bootstrap</span>
                                 <span class="tag">Tailwind</span>
+                            </div> -->
+                            <div class="project-actions mt-3">
+                                <button class="btn btn-project-more project-more" type="button">
+                                    <i class="bi bi-arrow-up-right-circle me-2"></i>View More
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -479,13 +485,18 @@
                             <h3 class="project-title">Personal Expense Tracker And Analyzer</h3>
                             <p class="project-text">Interactive personal expense tracker and analytics dashboard built
                                 with Python, Pandas, SQLite, and Streamlit.</p>
-                            <div class="tag-row">
+                            <!-- <div class="tag-row">
                                 <span class="tag">Python</span>
                                 <span class="tag">Pandas</span>
                                 <span class="tag">Numpy</span>
                                 <span class="tag">Matplotlib</span>
                                 <span class="tag">Streamlit</span>
                                 <span class="tag">SQLite</span>
+                            </div> -->
+                            <div class="project-actions mt-3">
+                                <button class="btn btn-project-more project-more" type="button">
+                                    <i class="bi bi-arrow-up-right-circle me-2"></i>View More
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -513,7 +524,7 @@
                             <h3 class="project-title">AI-Powered Financial Entry Automation Tool</h3>
                             <p class="project-text">Tool for reducing manual work and improving reconciliation accuracy.
                             </p>
-                            <div class="tag-row">
+                            <!-- <div class="tag-row">
                                 <span class="tag">Python</span>
                                 <span class="tag">Streamlit</span>
                                 <span class="tag">pandas</span>
@@ -521,6 +532,11 @@
                                 <span class="tag">pdfplumber</span>
                                 <span class="tag">tempfile</span>
                                 <span class="tag">pathlib</span>
+                            </div> -->
+                            <div class="project-actions mt-3">
+                                <button class="btn btn-project-more project-more" type="button">
+                                    <i class="bi bi-arrow-up-right-circle me-2"></i>View More
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -545,12 +561,19 @@
                         <div class="project-body">
                             <div class="project-cat">Java Based Project</div>
                             <h3 class="project-title">Airline Reservation System</h3>
-                            <p class="project-text">Airline Reservation System is a Java application used to search flights, book and cancel tickets, manage passengers, and control flight data, demonstrating object-oriented programming and database connectivity.
+                            <p class="project-text">Airline Reservation System is a Java application used to search
+                                flights, book and cancel tickets, manage passengers, and control flight data,
+                                demonstrating object-oriented programming and database connectivity.
                             </p>
-                            <div class="tag-row">
+                            <!-- <div class="tag-row">
                                 <span class="tag">Java</span>
                                 <span class="tag">JDBC</span>
                                 <span class="tag">MySQL (XAMPP)</span>
+                            </div> -->
+                            <div class="project-actions mt-3">
+                                <button class="btn btn-project-more project-more" type="button">
+                                    <i class="bi bi-arrow-up-right-circle me-2"></i>View More
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -569,7 +592,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section-pad">
+    <section id="contact" class="section-pad ">
         <div class="container">
             <div class="section-head reveal">
                 <p class="section-pill">&lt;Contact /&gt;</p>
@@ -609,8 +632,10 @@
                         <div class="mt-4">
                             <div class="small connect-text mb-2">Connect with me</div>
                             <div class="d-flex flex-wrap gap-2">
-                                <a class="btn btn-chip" href="https://github.com/Kasim-09" target="_blank" rel="noopener"><i class="bi bi-github me-2"></i>GitHub</a>
-                                <a class="btn btn-chip" href="https://www.linkedin.com/in/kasimhussain329" target="_blank" rel="noopener"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+                                <a class="btn btn-chip" href="https://github.com/Kasim-09" target="_blank"
+                                    rel="noopener"><i class="bi bi-github me-2"></i>GitHub</a>
+                                <a class="btn btn-chip" href="https://www.linkedin.com/in/kasimhussain329"
+                                    target="_blank" rel="noopener"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
                                 <a class="btn btn-chip" href="mailto:vijapurakasimhussain@gmail.com"><i
                                         class="bi bi-envelope me-2"></i>Email</a>
                             </div>

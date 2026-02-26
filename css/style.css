@@ -767,3 +767,70 @@ body::after{
   .modal.fade .modal-dialog{ transition:none !important; }
   .bar .fill{ transition:none !important; transform: scaleX(1) !important; }
 }
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 50px;
+    background: rgba(0, 255, 170, 0.08);
+    border: 1px solid rgba(0, 255, 170, 0.3);
+    color: #7CFFCB;
+    font-weight: 500;
+    backdrop-filter: blur(8px);
+    animation: badgeGlow 3s ease-in-out infinite alternate;
+}
+
+/* Outer badge glow */
+@keyframes badgeGlow {
+    0% {
+        box-shadow: 0 0 8px rgba(0, 255, 170, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 255, 170, 0.6);
+    }
+}
+
+/* Small glowing dot */
+.dot-glow {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #00ffaa;
+    box-shadow: 0 0 8px #00ffaa;
+    animation: pulseDot 1.5s infinite ease-in-out;
+}
+
+@keyframes pulseDot {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 6px #00ffaa;
+    }
+    50% {
+        transform: scale(1.4);
+        box-shadow: 0 0 16px #00ffaa;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 6px #00ffaa;
+    }
+}
+
+/* Project CTA button (matches glass + neon theme) */
+.btn-project-more{
+  width: 100%;
+  border-radius: 16px !important;
+  padding: 12px 14px !important;
+  font-weight: 800 !important;
+
+  border: 1px solid rgba(98,215,255,0.30) !important;
+  background: rgba(98,215,255,0.08) !important;
+  color: var(--accent2) !important;
+
+  box-shadow: 0 14px 40px rgba(98,215,255,0.10);
+}
+
+.btn-project-more:hover{
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+}
