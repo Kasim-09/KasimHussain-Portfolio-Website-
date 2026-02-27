@@ -834,3 +834,11 @@ body::after{
   transform: translateY(-2px);
   filter: brightness(1.06);
 }
+
+#mainNav { z-index: 9999; }
+
+#mainNav .nav-link{
+  color: #fff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
